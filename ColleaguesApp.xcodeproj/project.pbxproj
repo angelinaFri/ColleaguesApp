@@ -79,13 +79,13 @@
 		58EAEC4E24C0D9AF0009DF69 /* ColleaguesApp */ = {
 			isa = PBXGroup;
 			children = (
-				58EAEC4F24C0D9AF0009DF69 /* AppDelegate.swift */,
-				58EAEC5124C0D9AF0009DF69 /* SceneDelegate.swift */,
+				58EAEC7124C0DB5C0009DF69 /* Application */,
+				58EAEC7224C0DBBB0009DF69 /* Presentation */,
+				58EAEC7724C0E3870009DF69 /* Data */,
+				58EAEC7624C0E2F40009DF69 /* Network */,
+				58EAEC7524C0DDF00009DF69 /* Resources */,
 				58EAEC5324C0D9AF0009DF69 /* ViewController.swift */,
 				58EAEC5524C0D9AF0009DF69 /* Main.storyboard */,
-				58EAEC5824C0D9B50009DF69 /* Assets.xcassets */,
-				58EAEC5A24C0D9B50009DF69 /* LaunchScreen.storyboard */,
-				58EAEC5D24C0D9B50009DF69 /* Info.plist */,
 			);
 			path = ColleaguesApp;
 			sourceTree = "<group>";
@@ -97,6 +97,54 @@
 				58EAEC6824C0D9B60009DF69 /* Info.plist */,
 			);
 			path = ColleaguesAppTests;
+			sourceTree = "<group>";
+		};
+		58EAEC7124C0DB5C0009DF69 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				58EAEC4F24C0D9AF0009DF69 /* AppDelegate.swift */,
+				58EAEC5124C0D9AF0009DF69 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		58EAEC7224C0DBBB0009DF69 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		58EAEC7524C0DDF00009DF69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58EAEC5A24C0D9B50009DF69 /* LaunchScreen.storyboard */,
+				58EAEC5D24C0D9B50009DF69 /* Info.plist */,
+				58EAEC5824C0D9B50009DF69 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58EAEC7624C0E2F40009DF69 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		58EAEC7724C0E3870009DF69 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				58EAEC7824C0E38B0009DF69 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		58EAEC7824C0E38B0009DF69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = ColleaguesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinaFriz..ColleaguesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = ColleaguesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinaFriz..ColleaguesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
