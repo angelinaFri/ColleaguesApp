@@ -1,5 +1,5 @@
 //
-//  APIConstants.swift
+//  Result.swift
 //  ColleaguesApp
 //
 //  Created by Angelina on 16.07.2020.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum Result<T, E: Error> {
+    case success(T)
+    case failure(E)
+}

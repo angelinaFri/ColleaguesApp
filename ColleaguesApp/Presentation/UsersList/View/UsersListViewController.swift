@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UsersListViewController: UIViewController, StoryboardInstantiable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
