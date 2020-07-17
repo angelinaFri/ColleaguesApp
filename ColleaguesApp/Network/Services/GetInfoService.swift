@@ -10,8 +10,8 @@ import Foundation
 
 class GetInfoService: RequestHandler {
 
-    func getInfo(completion: @escaping((Result<DataResponse, ErrorResult>) -> Void)) {
-        let url = String(format: Global.getUserList)
+    func getInfo(page: Int, completion: @escaping((Result<DataResponse, ErrorResult>) -> Void)) {
+        let url = String(format: Global.getUserList, page)
         APIService.init().get(urlString: url, completion: self.networkResult(completion: completion))
     }
 }

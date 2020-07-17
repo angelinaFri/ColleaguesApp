@@ -14,7 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: MainCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         let navController = UINavigationController()
+        if #available(iOS 13.0, *) {
+            navController.setupDefaultNavigationBarAppearance()
+            navController.barAppearance()
+        } else {
+            AppAppearance.setupAppearance()
+        }
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
 

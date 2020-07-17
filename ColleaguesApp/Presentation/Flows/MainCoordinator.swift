@@ -18,7 +18,14 @@ class MainCoordinator: Coordinator {
 
     func start() {
         let vc = UsersListViewController.instantiate()
+        vc.showUserDetail = show(_:)
         navigationController.pushViewController(vc, animated: false)
+    }
+
+    func show(_ user: User) {
+        let detailVC = UserDetailViewController.instantiate()
+        detailVC.user = user
+        navigationController.pushViewController(detailVC, animated: true)
     }
 }
 

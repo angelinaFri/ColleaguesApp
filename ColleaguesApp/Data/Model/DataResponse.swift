@@ -11,7 +11,7 @@ import Foundation
 // MARK: - DataResponse
 struct DataResponse: Codable {
     let page, perPage, total, totalPages: Int
-    let user: [User]
+    let users: [User]
     let ad: Ad
 
     enum CodingKeys: String, CodingKey {
@@ -19,7 +19,8 @@ struct DataResponse: Codable {
         case perPage = "per_page"
         case total
         case totalPages = "total_pages"
-        case user, ad
+        case users = "data"
+        case ad
     }
 }
 
